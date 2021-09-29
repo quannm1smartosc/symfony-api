@@ -1180,6 +1180,6 @@ div.sf-toolbar .sf-toolbar-block a:hover {
         display: none !important;
     }
 }
-", "@WebProfiler/Profiler/toolbar.css.twig", "/home/krchaos/SymfonyAPI/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar.css.twig");
+", "@WebProfiler/Profiler/toolbar.css.twig", "/home/quan/symfony-api/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar.css.twig");
     }
 }

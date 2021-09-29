@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -28,7 +29,7 @@ class Cart
     private $dateTime;
 
     /**
-     * @var Customer
+     * @var Customer|null
      *
      * @ORM\OneToOne(targetEntity="Customer")
      */
@@ -41,15 +42,15 @@ class Cart
      */
     private $products;
 
-    /**
-     * @return mixed
-     */
 
     public function __construct()
     {
         $this->products = new ArrayCollection();
     }
 
+    /**
+     * @return mixed
+     */
     public function getId()
     {
         return $this->id;
@@ -72,23 +73,23 @@ class Cart
     }
 
     /**
-     * @return Customer
+     * @return Customer|null
      */
-    public function getCustomer(): Customer
+    public function getCustomer(): ?Customer
     {
         return $this->customer;
     }
 
     /**
-     * @param Customer $customer
+     * @param Customer|null $customer
      */
-    public function setCustomer(Customer $customer): void
+    public function setCustomer(?Customer $customer): void
     {
         $this->customer = $customer;
     }
 
     /**
-     * @return Collection|Product[]
+     * @return Product[]|Collection
      */
     public function getProducts()
     {
@@ -96,7 +97,7 @@ class Cart
     }
 
     /**
-     * @param Collection|Product[] $products
+     * @param Product[]|Collection $products
      */
     public function setProducts($products): void
     {

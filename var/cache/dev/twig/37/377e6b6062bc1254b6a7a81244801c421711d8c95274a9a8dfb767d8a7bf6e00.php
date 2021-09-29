@@ -764,6 +764,6 @@ class __TwigTemplate_601c5050bdd1f3eac7564e8fc2330580759a191b015f4352696c6f55cad
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/mailer.html.twig", "/home/krchaos/SymfonyAPI/vendor/symfony/web-profiler-bundle/Resources/views/Collector/mailer.html.twig");
+", "@WebProfiler/Collector/mailer.html.twig", "/home/quan/symfony-api/vendor/symfony/web-profiler-bundle/Resources/views/Collector/mailer.html.twig");
     }
 }

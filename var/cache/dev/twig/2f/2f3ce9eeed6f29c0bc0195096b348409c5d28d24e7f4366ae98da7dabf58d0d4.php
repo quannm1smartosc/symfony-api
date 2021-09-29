@@ -193,6 +193,6 @@ $context["name"], "profiler_markup_version" =>                 // line 17
     </a>
 </div>
 <!-- END of Symfony Web Debug Toolbar -->
-", "@WebProfiler/Profiler/toolbar.html.twig", "/home/krchaos/SymfonyAPI/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar.html.twig");
+", "@WebProfiler/Profiler/toolbar.html.twig", "/home/quan/symfony-api/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar.html.twig");
     }
 }

@@ -10,7 +10,7 @@ if (in_array(PHP_SAPI, ['cli', 'phpdbg'], true)) {
 }
 
 require dirname(__DIR__, 3).'/vendor/autoload.php';
-require __DIR__.'/ContainerQSCzBpu/srcApp_KernelDevDebugContainer.php';
+require __DIR__.'/Container61pYPin/srcApp_KernelDevDebugContainer.php';
 
 $classes = [];
 $classes[] = 'Symfony\Bundle\FrameworkBundle\FrameworkBundle';
@@ -33,8 +33,13 @@ $classes[] = 'Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser';
 $classes[] = 'Symfony\Bundle\FrameworkBundle\EventListener\ResolveControllerNameSubscriber';
 $classes[] = 'Symfony\Component\HttpFoundation\RequestMatcher';
 $classes[] = 'Symfony\Component\DependencyInjection\ServiceLocator';
+$classes[] = 'App\Controller\CartController';
 $classes[] = 'App\Controller\CustomerController';
+$classes[] = 'App\Controller\ProductController';
+$classes[] = 'App\Controller\TestController';
+$classes[] = 'App\Form\Type\CartType';
 $classes[] = 'App\Form\Type\CustomerType';
+$classes[] = 'App\Form\Type\ProductType';
 $classes[] = 'Doctrine\Bundle\DoctrineBundle\Dbal\ManagerRegistryAwareConnectionProvider';
 $classes[] = 'Doctrine\Bundle\DoctrineBundle\Registry';
 $classes[] = 'Doctrine\DBAL\Tools\Console\Command\RunSqlCommand';

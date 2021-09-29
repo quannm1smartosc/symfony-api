@@ -10,31 +10,41 @@ use Symfony\Component\HttpFoundation\Response;
 
 class CustomerController extends AbstractApiController
 {
+    /**
+     * @var EntityManagerInterface
+     */
+    private $em;
+
+    /**
+     * @param EntityManagerInterface $em
+     */
+    public function __construct(EntityManagerInterface $em)
+    {
+        $this->em = $em;
+    }
+
     public function indexAction(Request $request): Response
     {
         $customers = $this->getDoctrine()->getRepository(Customer::class)->findAll();
 
-        return $this->json($customers);
+        return $this->respond($customers);
     }
 
-    public function createAction(
-        Request $request,
-        EntityManagerInterface $em
-    ): Response {
+    public function createAction(Request $request): Response
+    {
         $form = $this->buildForm(CustomerType::class);
 
         $form->handleRequest($request);
 
         if (!$form->isSubmitted() || !$form->isValid()) {
-            print('Error');
-            exit;
+            return $this->respond($form, Response::HTTP_BAD_REQUEST);
         }
 
         /** @var Customer $customer */
         $customer = $form->getData();
-        $em->persist($customer);
-        $em->flush();
+        $this->em->persist($customer);
+        $this->em->flush();
 
-        return $this->json($customer);
+        return $this->respond($customer);
     }
 }

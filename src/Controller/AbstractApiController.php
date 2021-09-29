@@ -2,11 +2,11 @@
 
 namespace App\Controller;
 
-use App\Entity\Customer;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use FOS\RestBundle\Controller\AbstractFOSRestController;
 use Symfony\Component\Form\FormInterface;
+use Symfony\Component\HttpFoundation\Response;
 
-abstract class AbstractApiController extends AbstractController
+abstract class AbstractApiController extends AbstractFOSRestController
 {
     protected function buildForm(
         string $type,
@@ -18,5 +18,10 @@ abstract class AbstractApiController extends AbstractController
         ]);
 
         return $this->get('form.factory')->createNamed('', $type, $data, $options);
+    }
+
+    public function respond($data, int $statusCode = Response::HTTP_OK): Response
+    {
+        return $this->handleView($this->view($data, $statusCode));
     }
 }
