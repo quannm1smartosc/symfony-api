@@ -83,6 +83,6 @@ class __TwigTemplate_50e9149d68e4a400a3765c6715bf4ddf625a8660e9e116f13f8d8909981
 <?xml version=\"1.0\" encoding=\"{{ _charset }}\" ?>
 
 <error code=\"{{ status_code }}\" message=\"{{ status_text }}\" />
-", "@Twig/Exception/error.xml.twig", "/home/krchaos/SymfonyAPI/vendor/symfony/twig-bundle/Resources/views/Exception/error.xml.twig");
+", "@Twig/Exception/error.xml.twig", "/home/quan/symfony-api/vendor/symfony/twig-bundle/Resources/views/Exception/error.xml.twig");
     }
 }

@@ -1,0 +1,7 @@
+[
+    {
+        "location": "DAMA\\DoctrineTestBundle\\PHPUnit\\PHPUnitExtension::executeBeforeFirstTest",
+        "message": "The \"DAMA\\DoctrineTestBundle\\Doctrine\\DBAL\\AbstractStaticDriverV2\" class implements \"Doctrine\\DBAL\\Driver\\ExceptionConverterDriver\" that is deprecated.",
+        "count": 1
+    }
+]

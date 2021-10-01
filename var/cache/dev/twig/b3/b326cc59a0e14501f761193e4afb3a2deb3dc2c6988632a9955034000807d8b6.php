@@ -79,6 +79,6 @@ class __TwigTemplate_5727c12798196b10b44731b338e273b2401359f7415ac7abf8bb03d1f3f
 /*
 {{ include('@Twig/Exception/exception.txt.twig', { exception: exception }) }}
 */
-", "@Twig/Exception/exception.css.twig", "/home/krchaos/SymfonyAPI/vendor/symfony/twig-bundle/Resources/views/Exception/exception.css.twig");
+", "@Twig/Exception/exception.css.twig", "/home/quan/symfony-api/vendor/symfony/twig-bundle/Resources/views/Exception/exception.css.twig");
     }
 }

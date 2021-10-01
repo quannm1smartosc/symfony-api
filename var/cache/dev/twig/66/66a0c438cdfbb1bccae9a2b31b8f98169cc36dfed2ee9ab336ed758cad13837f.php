@@ -99,6 +99,6 @@ class __TwigTemplate_321796b70a68765dbc619d660c336405852f9ab6452444869a55e86520a
             </trace>
 {% endfor %}
         </traces>
-", "@Twig/Exception/traces.xml.twig", "/home/krchaos/SymfonyAPI/vendor/symfony/twig-bundle/Resources/views/Exception/traces.xml.twig");
+", "@Twig/Exception/traces.xml.twig", "/home/quan/symfony-api/vendor/symfony/twig-bundle/Resources/views/Exception/traces.xml.twig");
     }
 }

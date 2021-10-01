@@ -65,6 +65,6 @@ class __TwigTemplate_80ba08c7e6f7f0b182b605e959bec26517501a34741da05873bac43bf28
     {
         return new Source("<?php \$symbol = false !== \$symbol ? (\$symbol ? ' '.\$symbol : ' %') : '' ?>
 <?php echo \$view['form']->block(\$form, 'form_widget_simple', ['type' => \$type ?? 'text']).\$view->escape(\$symbol) ?>
-", "@Framework/Form/percent_widget.html.php", "/home/krchaos/SymfonyAPI/vendor/symfony/framework-bundle/Resources/views/Form/percent_widget.html.php");
+", "@Framework/Form/percent_widget.html.php", "/home/quan/symfony-api/vendor/symfony/framework-bundle/Resources/views/Form/percent_widget.html.php");
     }
 }

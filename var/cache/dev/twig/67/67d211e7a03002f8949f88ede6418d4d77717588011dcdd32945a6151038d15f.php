@@ -350,7 +350,7 @@ class __TwigTemplate_761087a31ad67dfb4f734ac3d1e0ff9f0f6b7743e3da3e4a43a4cb37468
 
         ";
         // line 119
-        if ((0 !== twig_compare("n/a", twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 119, $this->source); })()), "env", [], "any", false, false, false, 119)))) {
+        if ( !("n/a" === twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 119, $this->source); })()), "env", [], "any", false, false, false, 119))) {
             // line 120
             echo "            <div class=\"metric\">
                 <span class=\"value\">";
@@ -365,7 +365,7 @@ class __TwigTemplate_761087a31ad67dfb4f734ac3d1e0ff9f0f6b7743e3da3e4a43a4cb37468
         echo "
         ";
         // line 126
-        if ((0 !== twig_compare("n/a", twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 126, $this->source); })()), "debug", [], "any", false, false, false, 126)))) {
+        if ( !("n/a" === twig_get_attribute($this->env, $this->source, (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new RuntimeError('Variable "collector" does not exist.', 126, $this->source); })()), "debug", [], "any", false, false, false, 126))) {
             // line 127
             echo "            <div class=\"metric\">
                 <span class=\"value\">";
@@ -695,14 +695,14 @@ class __TwigTemplate_761087a31ad67dfb4f734ac3d1e0ff9f0f6b7743e3da3e4a43a4cb37468
             <span class=\"label\">Symfony version</span>
         </div>
 
-        {% if 'n/a' != collector.env %}
+        {% if 'n/a' is not same as(collector.env) %}
             <div class=\"metric\">
                 <span class=\"value\">{{ collector.env }}</span>
                 <span class=\"label\">Environment</span>
             </div>
         {% endif %}
 
-        {% if 'n/a' != collector.debug %}
+        {% if 'n/a' is not same as(collector.debug) %}
             <div class=\"metric\">
                 <span class=\"value\">{{ collector.debug ? 'enabled' : 'disabled' }}</span>
                 <span class=\"label\">Debug</span>
